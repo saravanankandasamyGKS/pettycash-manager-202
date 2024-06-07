@@ -3,14 +3,17 @@ import styled from "styled-components";
 import bg from './img/bg.png'
 import {MainLayout} from './styles/Layouts'
 import Orb from './Components/Orb/Orb'
+import axios from 'axios';
 import Navigation from './Components/Navigation/Navigation'
 import Dashboard from './Components/Dashboard/Dashboard';
 import Income from './Components/Income/Income'
 import Expenses from './Components/Expenses/Expenses';
 import { useGlobalContext } from './context/globalContext';
-import axios from 'axios';
+
+
 
 axios.defaults.baseURL='https://pettycash-manager-201-5.onrender.com'
+
 function App() {
   const [active, setActive] = useState(1)
 
